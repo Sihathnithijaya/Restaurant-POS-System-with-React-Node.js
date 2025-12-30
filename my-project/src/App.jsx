@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { BrowserRouter as Route, Router, Routes } from "react-router-dom"
 
 
 function App() {
@@ -6,7 +6,13 @@ function App() {
 
   return (
     <>
-      <h1 className="font-bold underline text-red-500 ghf">hello</h1>
+      <Router>
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/Auth" element={<AboutPage />} />
+          <Route path="/Orders" element={<ContactPage />} />
+        </Routes>
+      </Router>
     </>
   )
 }
