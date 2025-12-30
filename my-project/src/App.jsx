@@ -1,20 +1,19 @@
-import { BrowserRouter as Route, Router, Routes } from "react-router-dom"
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { Home, Auth, Orders } from "./pages";
 
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <>
       <Router>
         <Routes>
-          <Route path="/" element={<HomePage />} />
-          <Route path="/Auth" element={<AboutPage />} />
-          <Route path="/Orders" element={<ContactPage />} />
+          <Route path="/" element={<Home />} />
+          <Route path="/auth" element={<Auth />} />
+          <Route path="/orders" element={<Orders />} />
         </Routes>
       </Router>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
