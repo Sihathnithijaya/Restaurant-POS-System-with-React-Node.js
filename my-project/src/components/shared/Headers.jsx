@@ -38,7 +38,6 @@ function Headers() {
       </div>
     </header>
   );
-
 };
 
 export default Headers;
