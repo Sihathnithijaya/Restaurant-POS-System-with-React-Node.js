@@ -26,7 +26,7 @@ function Orders() {
             </div>
 
 
-            <div className="flex flex-wrap gap-6 px-16 py-4 overflow-y-scroll h-[calc(100vh-5rem-5rem)] scrollbar-hide">
+            <div className="flex flex-wrap gap-6 px-16 py-4 justify-center overflow-y-scroll h-[calc(100vh-5rem-5rem)] scrollbar-hide">
                 <OrderCard />
                 <OrderCard />
                 <OrderCard />
